@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+  <title></title>
+   <style> 
+     body { background-color:<%=backgroundColor%>; }
+   </style>
+</head>
+<body class="container">
+  <h1>Welcome to the CSS Garden of Good and Evil</h1>
+
+  <form action="/" method="post">
+    <label for="goodOrEvil">Select good or evil content:</label>
+    <input type="radio" name="goodOrEvil" value="good" class="input-group"> Good
+    <input type="radio" name="goodOrEvil" value="evil" class="input-group"> Evil
+    <br>
+    <label for="favoriteFood">Favorite Food: </label>
+    <input type="text" name="favoriteFood" class="form-control input-group">
+    <br>
+    <select name="favoriteColor" class="form-control input-group">
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+    </select>
+    <br>
+    <label for="insanityLevel">Select Insanity Level: </label>
+    <div class="slidecontainer">
+      <input type="range" min="1" max="10" value="5" class="slider" id="insanityLevel">
+    </div>
+
+
+    <input type="submit" name="submit" class="btn btn-primary submit">
+    
+  </form>
+  <br>
+  <div id="favorite-things">
+    <ul>
+      <li>Favorite Food: <%=favoriteFood%></li>
+    </ul>
+  </div>
+<%if(goodOrEvil == 'evil') {%>
+  <h1>EVIL!</h1>
+<%} else {%>
+  <h1>GOOD!</h1>
+<%}%>
+
+</body>
+</html>

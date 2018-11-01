@@ -1,0 +1,29 @@
+{
+  "name": "assignment_css_garden_of_good_and_evil",
+  "version": "1.0.0",
+  "description": "Create a CSS garden that adapts to your whims.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikingeducation/assignment_css_garden_of_good_and_evil.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikingeducation/assignment_css_garden_of_good_and_evil/issues"
+  },
+  "homepage": "https://github.com/vikingeducation/assignment_css_garden_of_good_and_evil#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  }
+}
